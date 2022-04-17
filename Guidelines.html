@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>
+              <a class="tag" href="index.html">Home</a>
+          </li>
+          <li>
+              <a class="tag" href="Guidelines.html">PRECAUTIONS</a>
+          </li>
+          <li>
+               <a class="tag"  href="update.html">update</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>COVID-19 PRECAUTIONS</h1>
+          <br>
+          <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="images/gloves.jpg" style="width:100%" height="400px">
+            <div class="text">Always use gloves while going outsite the home</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="images/mask.jpg" style="width:100%" height="400px">
+            <div class="text">always wear mask</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="images/medicine.jpg" style="width:100%" height="400px">
+            <div class="text">if you are above 13 do your vaccination,if not done</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"">4 / 5</div>
+            <img src="images/testing.jpg" style="width:100%" height="400px">
+            <div class="text">if you find symptoms ,then go to nearest hospital and to the testing</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"">5 / 5</div>
+            <img src="images/stay_safe.jpg" style="width:100%" height="400px">
+            <div class="text">stay safe and stay happy</div>
+          </div>
+
+          </div>
+          <br>
+          <div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+          <script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1000); // Change image every 2 seconds
+  }
+  </script>
+
+<br>
+<h2>Cleaning and hygiene tips to help keep the COVID-19 virus out of your home</h2>
+<ul>
+  <li>
+    <h3>Don’t touch your face</h3>
+    <p>Avoid touching your eyes, nose and mouth.</p>
+  </li>
+  <li>
+    <h3>Don’t cough or sneeze into your hands </h3>
+    <p>Cover your mouth and nose with your elbow or tissue when coughing or sneezing. Dispose of used tissue immediately.</p>
+  </li>
+  <li>
+    <h3>Keep your distance </h3>
+      <p>Maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing.</p>
+  </li>
+  <li>
+  <h3>Wash, wash, wash your hands </h3>
+  <p>Yes, you’re hearing it everywhere, because it’s the best line of defence. Wash hands frequently with soap and water for at least 20-30 seconds. </p>
+     </li>
+</ul>
+
+
+  </body>
+</html>
